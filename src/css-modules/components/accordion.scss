@@ -1,0 +1,42 @@
+.accordion {
+    @extend %shdw-blur-l;
+    background:#fff;
+    width:300px;
+    border-radius:10px;
+    color:$font-gray-light;
+    overflow: hidden;
+    &-item {
+        p {
+            @extend %fb-sb;
+            font-size:18px;
+            padding:15px;
+            margin:0;
+            svg {
+                transition: all 0.3s;
+                transform: rotate(-90deg);
+                width:15px;
+            }
+            .chevron-open {
+                transform: rotate(0);
+            }
+        }
+        &:not(.accordion-item-open):hover {
+            @extend %shdw-blur-s;
+        }
+    }
+    &-summary {
+        cursor: pointer;
+        color:$font-primary;
+    }
+    @media screen and (max-height: 900px){
+       width:200px;
+       p {
+           font-size: 14px;
+           padding:10px;
+           svg {
+            width:12px;
+        }
+       }
+    
+   }
+}

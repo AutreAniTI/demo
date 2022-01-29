@@ -1,0 +1,49 @@
+.radio-btn {
+    width:fit-content;
+    box-sizing: border-box;
+    @extend %fb-col;
+    align-items: flex-start;
+    margin:0 auto;
+    &-wrapper {
+        @extend %fb-fs;
+        margin-top:15px;
+        font-size:20px;
+        color: $font-gray-light;
+        cursor: pointer;
+    }
+    &-circle {
+        box-sizing: border-box;
+        width:30px;
+        height: 30px;
+        border:3px solid $light-gray;
+        margin-right:10px;
+        border-radius: 50%;
+    }
+    &-wrapper-checked {
+        .radio-btn-circle {
+            border:none;
+            background: $green-blue;
+            position: relative;
+            @extend %fb-c;
+            &:after {
+                position: absolute;
+                width:16px;
+                height: 16px;
+                content: "";
+                border:5px solid white;
+                border-radius:50%;
+            }
+            &:hover {
+                background: $blue-green;
+            }
+        }
+        span {
+            color:$green;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+

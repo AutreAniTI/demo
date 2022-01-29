@@ -1,0 +1,61 @@
+.toggle-button {
+    width:120px;
+    height:60px;
+    background: $green-blue;
+    border-radius: 30px;
+    transition: all 0.3s;
+    position: relative;
+    .toggler {
+        cursor: pointer;
+        transition: all 0.3s;
+        position: absolute;
+        z-index: 2;
+        width:30%;
+        height:60%;
+        border-radius: 50%;
+        left:10%;
+        top:20%;
+        background:#fff;
+    }
+    &:after {
+        transition: all .2s;
+        opacity: 1;
+        width:calc(100% - 6px);
+        height:calc(100% - 6px);
+        position: absolute;
+        left:3px;
+        top:3px;
+        content: "";
+        background: $lighter-gray;
+        border-radius: 30px;
+
+    }
+    @media screen and (max-height: 900px){
+        height:40px;
+        width:80px;
+    }
+}
+
+.toggle-button-active {
+    .toggler {
+        left:60%;
+    }
+    &:after {
+        opacity:0;
+    }
+}
+
+.toggle-wrapper {
+    @extend %fb-col;
+    &-item{
+        margin-bottom:1vh;
+        @extend %fb-fs;
+        .label {
+            display: inline-block;
+            width:100px;
+            font-size:18px;
+            color:$font-primary;
+        }
+ 
+    }
+}

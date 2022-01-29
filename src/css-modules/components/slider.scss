@@ -1,0 +1,75 @@
+.slider-wrapper {
+    box-sizing: border-box;
+    width:80%;
+    margin:0 auto;
+    height: 100%;
+    @extend %fb-col;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow:hidden;
+    padding:2vh 0;
+    .slider {
+        transition: all .3s;
+        @extend %fb-fs;
+        height: stretch;
+        &-elem {
+            height: 100%;
+        }
+    }
+    .question-exclamation-wrapper {
+        @extend %fb-sb;
+        width:30%;
+        margin:0 auto;
+        @media screen and (max-height: 900px){
+            div {
+                // height: 40px;
+            }
+            img {
+                height:40px;
+                width:40px;
+            }
+       }
+    }
+   .button-wrapper{
+       width:100%;
+       @extend %fb-sb;
+       .go-back-btn{
+           flex-direction: row-reverse;
+           img {
+               margin-right:15px
+           }
+       }
+       .continue-btn {
+           img {
+               margin-left:15px;
+           }
+       }
+       @media screen and (max-height: 900px){
+            min-height: 44px;
+        }
+       
+       .qa-container{
+            position: relative;
+            .box-content-wrapper {
+                animation: fade-in 0.3s linear forwards;
+                position: absolute;
+                top:0;
+                width:fit-content;
+                height: fit-content;
+            }
+        }
+        .qa-container-right {
+            .box-content-wrapper {
+                right:0;
+                transform:translate(100%, -100%);
+            }
+        }
+        .qa-container-left {
+            .box-content-wrapper {
+                left:0;
+                transform:translate(-100%, -100%);
+            }
+        }
+   }
+}
+

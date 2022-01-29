@@ -1,0 +1,46 @@
+@import '../config';
+@import '../utils';
+
+header {
+    width:100%;
+    padding:10px 0;
+    background:#FFF;
+    @extend %shdw-dp-l;
+    .header-container {
+        @extend %fb-sb;
+    }
+    .logo {
+        width:150px;
+        height: 100px;
+        @extend %bg-contain;
+    }
+    .call-icon-wrapper {
+        @extend %shdw-blur-m;
+        border-radius: 50px;
+        width:60px;
+        height: 60px;
+        @extend %fb-c;
+
+    }
+    .call-icon {
+        @extend %bg-contain;
+        width:35px;
+        height: 35px;
+    }
+    @media screen and (max-height: 900px){
+        padding:0;
+       .logo {
+            height: 80px;
+            width:125px;
+       }
+       .call-icon-wrapper {
+            width:50px;
+            height: 50px;
+        }
+        .call-icon {
+            width:25px;
+            height: 25px;
+        }
+    }
+ 
+}

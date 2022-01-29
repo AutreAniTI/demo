@@ -1,0 +1,126 @@
+//flex boxes
+
+//flex-box-center
+%fb-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//flex box flex-start
+
+%fb-fs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+//align flex start justify flex start
+
+%fb-fs-fs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+//justfiy flex end
+%fb-fe{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+//flex-box-center column
+%fb-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+//flex-box space-between
+%fb-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+//flex-box space-between column
+%fb-sb-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+//box shadows
+
+//backgroundImage
+
+%bg-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+
+%bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+
+//shadows
+
+//shadow in and out 
+
+//small
+%shdw-io-s{
+    box-shadow: -3px -3px 6px #FFFFFF, 
+       5px 5px 7px rgba(0, 0, 0, 0.15);
+}
+
+//medium
+
+%shdw-io-m{
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 15%),
+     -5px -5px 7px #fff;
+}
+//large
+%shdw-io-l{
+    box-shadow: -7px -7px 10x #FFFFFF, 
+       7px 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+//dropShadow
+
+//large
+%shdw-dp-l {
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.15);
+}
+
+//blur shadow
+%shdw-blur-s {
+    box-shadow: 0 0 3px rgba(0, 0, 0,.15);
+}
+%shdw-blur-m {
+    box-shadow: 0 0 5px rgba(0, 0, 0,.15);
+}
+
+%shdw-blur-l {
+    box-shadow: 0 0 10px rgba(0, 0, 0,.15);
+}
+
+
+
+//background gradial
+
+%white-gd {
+    background: radial-gradient(100% 19930.8% at -1.67% 14.74%,
+                                rgba(255, 255, 255, 0.21) 100%);
+
+}
+
+
+//dashed circle border
+
+%border-dashed-circle {
+    background-image: url('data:image/svg+xml,%3csvg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"%3e%3crect width="100%25" height="100%25" fill="none" rx="160" ry="160" stroke="DeepSkyBlue" stroke-width="3" stroke-dasharray="10%2c15" stroke-dashoffset="160" stroke-linecap="butt"/%3e%3c/svg%3e');
+}

@@ -1,0 +1,37 @@
+
+@keyframes zoom-total-interactions {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(0, 0) scale(7);
+
+    }
+}
+@keyframes zoom-people {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(0, 200%) scale(7);
+
+    }
+}
+@keyframes zoom-process {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(200%, -100%) scale(7);
+
+    }
+}
+
+@keyframes zoom-technology {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-200%, -100%) scale(7);
+    }
+}

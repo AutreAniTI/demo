@@ -1,0 +1,40 @@
+.message-box {
+    background: #fff;
+    padding:2vh 3vw;
+    border-radius: 20px;
+    width:fit-content;
+    margin-bottom:3vh;
+    font-size: 20px;
+    span {
+        font-weight: 500;
+        font-size:22px;
+    }
+    @media screen and (max-width: 1024px){
+        font-size: 18px;
+        span {
+            font-size: 19px;
+        }
+    }
+    @media screen and (max-height: 900px){
+        font-size: 18px;
+        span {
+            font-size: 19px;
+        }
+    }
+}
+.title-box {
+    padding: 4vh 4vw;
+    font-size:36px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-family: $raleway;
+    p {
+        margin:0;
+    }
+    @media screen and (max-width: 1024px){
+        font-size: 24px;
+    }
+    @media screen and (max-height: 900px){
+        font-size: 24px;
+    }
+}
