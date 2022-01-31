@@ -1,0 +1,51 @@
+.dropdown {
+    position: relative;
+    .toggler {
+        transition:all 0.3s;
+    }
+    .title,
+    .options {
+        box-sizing: border-box;
+        margin-top:20px;
+        animation: fade-in 0.3s ease-in-out forwards;
+        width:300px;
+        background:white;
+        border-radius: 10px;
+        @extend %shdw-blur-m;
+        overflow:hidden;
+        p {
+            margin:0;
+            font-size:24px;
+           
+        }
+    }
+    .options {
+        position: absolute;
+        top:calc(100%);
+    }
+   
+    &-item{
+        height:70px;
+        padding:0 20px;
+        @extend %fb-fs;
+        cursor: pointer;
+        p {
+            color:$light-gray;
+            &:hover {
+                color:$medium-gray;
+            }
+        }
+    }
+    .selected {
+        color:$medium-gray;
+    }
+    .title {
+        @extend %fb-sb;
+    }
+}
+
+.dropdown-open {
+    .toggler{
+        transform: rotate(180deg);
+    }
+} 

@@ -11,11 +11,16 @@ import {
   INTERACTIONS,
 } from './constants/routes';
 //test
-
+const env = process.env;
+const BASE =env?.PUBLIC_URL || ""
+console.log(BASE);
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router 
+      base = {BASE}
+      >
+
         <Switch>
           <Route path = {INTERACTIONS} component = {Interactions}/>
           <Route path={DEFAULT} exact component={Home} />

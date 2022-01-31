@@ -15,6 +15,13 @@ const Slider = ({
         disabled: false,
         incomplete:false,
     })
+    useEffect(() => {
+        let timerId;
+        if(autoplay){
+            timerId = setInterval(handleNextClick, 5000)
+        }
+        return clearInterval(timerId);
+    },[])
 
     useEffect(() => {
         if (outerSlider.current)
@@ -23,13 +30,9 @@ const Slider = ({
 
     const innerSlider = components.map((elem, index) => (
         <SlideElement
-            setDisabled={(bool) => setState({
+            setSliderControl = {(obj) => setState({
                 ...state,
-                disabled: bool
-            })}
-            setIncomplete={(bool) => setState({
-                ...state,
-                incomplete: bool
+                ...obj
             })}
             index = {index}
             active={(state.active - 1) === index}

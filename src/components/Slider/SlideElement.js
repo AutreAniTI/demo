@@ -3,8 +3,7 @@ const SlideElement = ({
     index,
     width, 
     Elem ,
-    setDisabled,
-    setIncomplete
+    setSliderControl
 }) => {
     return (
         <div
@@ -15,8 +14,7 @@ const SlideElement = ({
             <Elem 
             active = {active}
             index = {index}
-            setIncomplete = {setIncomplete}
-            setDisabled = {setDisabled}/>
+            setSliderControl = {setSliderControl}/>
         </div>
     );
 }

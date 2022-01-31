@@ -21,8 +21,9 @@
     }
     &-wrapper-checked {
         .radio-btn-circle {
-            border:none;
-            background: $green-blue;
+            // border:none;
+            // background: $green-blue;
+            border:3px solid $green;
             position: relative;
             @extend %fb-c;
             &:after {
@@ -30,7 +31,8 @@
                 width:16px;
                 height: 16px;
                 content: "";
-                border:5px solid white;
+                // border:5px solid white;
+                background: $green-blue;
                 border-radius:50%;
             }
             &:hover {

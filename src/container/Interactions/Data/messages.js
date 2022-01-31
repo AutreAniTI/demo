@@ -11,4 +11,8 @@ export const MESSAGES = [
         title: "Initiate Services",
         text: "To iniate services you will need to <span>ACCEPT PROPOSAL TERMS & COMPLETE</span> your <span>company</span> contract agreement."
     },
+    {
+        title: "Initiate Services",
+        text: "To iniate services you will need to <span>ACCEPT PROPOSAL TERMS & COMPLETE</span> your <span>company</span> contract agreement."
+    },
 ]
