@@ -10,15 +10,13 @@ import {
   DEFAULT,
   INTERACTIONS,
 } from './constants/routes';
-//test
-const env = process.env;
-const BASE =env?.PUBLIC_URL || ""
-console.log(BASE);
+
+
 function App() {
   return (
     <div className="App">
       <Router 
-      base = {BASE}
+      basename = "/demo"
       >
 
         <Switch>
