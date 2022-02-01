@@ -3,14 +3,27 @@ import NavCircle from "../../components/NavCircle/NavCircle";
 import DashedPolygon from "../../components/DashedComponents/DashedPolygon";
 import DashedLine from "../../components/DashedComponents/DashedLine";
 import { useState } from "react";
+import { useHistory } from "react-router";
+import { INTERACTIONS } from "../../constants/routes";
+import { useEffect } from "react";
 
 const Navigation = () => {
     const [activeNav, setActiveNav] = useState();
     const [animationName, setAnimationName] = useState();
+    const history = useHistory();
+
+    useEffect(() => {
+        if(activeNav) {
+            setActiveNav(null)
+            history.push(INTERACTIONS);
+
+        }
+    },[activeNav])
 
     const handleAnimationEnd = (e) => {
+        if(e.animationName === "fade-in") return;
         const activeNav = e.animationName.split("zoom-");
-        console.log(activeNav);
+        setActiveNav(activeNav)
     }
 
 
@@ -36,7 +49,7 @@ const Navigation = () => {
             className="interactions-nav-wrapper">
             <div
                 style={{ animationName }}
-                onAnimationEnd={() => handleAnimationEnd}
+                onAnimationEnd={handleAnimationEnd}
                 className="interactions-nav"
             >
                 {nav_main}

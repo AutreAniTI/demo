@@ -1,5 +1,7 @@
-import Navigation from '../Navigation/Navigation';
-import Video from '../../assets/videos/island.mp4'
+import Navigation from '../container/Navigation/Navigation';
+import Video from '../assets/videos/island.mp4';
+
+
 const Home = () => {
     return (
         <div

@@ -41,6 +41,15 @@
     align-items: center;
     justify-content: space-between;
 }
+
+//space-around
+
+%fb-sa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 //flex-box space-between column
 %fb-sb-c {
     display: flex;

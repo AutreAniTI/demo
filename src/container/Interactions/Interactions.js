@@ -9,7 +9,7 @@ import {CONTROLLER_DATA} from './Data/controllerData';
 
 const components = [Interaction1, Interaction2, Interaction3, Interaction4];
 
-const Interactions = () => {
+const InteractionsContainer = () => {
     return ( 
         <div
         style = {{backgroundImage: `url(${Background})`}}
@@ -26,4 +26,4 @@ const Interactions = () => {
      );
 }
  
-export default Interactions;
+export default InteractionsContainer;
