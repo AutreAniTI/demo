@@ -3,7 +3,7 @@
     @extend %fb-sb;
     align-items: flex-start;
     width:100vw;
-    min-height: 100vh;
+    height: 100vh;
     padding:10vh 0 0;
     &-left {
         width:25%;
@@ -18,21 +18,133 @@
     }
     &-right {
         width:60%;
-        height: 97vh;
+        height: 90vh;
+        padding:10vh 3vw 0;
+        border-top-left-radius: 20px;
+        background: $lighter-blue;
+        .chat-wrapper {
+            border-radius: 20px 20px 0 0px;
+            background: #fff;
+            height: 100%;
+        }
         &-header {
             width :100%;
-            height: 200px;
-            background: #fff;
-            border-radius: 20px 0 0 20px;
-            @extend %shdw-blur-l;
+            @extend %shdw-dp-l;
+            @extend %fb-fs;
+            padding: 2vh 50px;
+            .profile {
+                @extend %fb-fs;
+                .avatar {
+                    @extend %shdw-blur-m;
+                    background-color: #fff;
+                    background-position:top;
+                }
+                .name {
+                    font-size: 1.2vw;
+                    margin-left: 20px;
+                    color: $light-gray;
+                    font-weight: bold;
+                }
+            }
         }
         &-body {
-            margin-top:100px;
             width:100%;
-            height: stretch;
-            background: #fff;
-            border-radius: 20px 0 0 0;
-            @extend %shdw-blur-l;
+            padding: 0 50px;
+            height: calc(100% - 4vh - 80px);
+            @extend %fb-sb;
+            flex-direction: column;
+            .message-wrapper {
+                width:100%;
+                display:flex;
+                flex-direction:column;
+                align-items: flex-start;
+                justify-content: space-between;
+                .message {
+                    padding:10px 30px;
+                    font-size:1vw;
+                    width:fit-content;
+                    border-radius:20px;
+                    margin-top:5vh;
+                    @extend %fb-fs;
+                    max-width:80%;
+                    .avatar {
+                        background-color:#fff;
+                        margin-right:20px;
+                    }
+                }
+                .message-them {
+                    background: $lighter-blue;
+                    position: relative;
+                    right:0;
+                    align-self: flex-end;
+                    border-bottom-right-radius: 0;
+                }
+                .message-us {
+                    background:$blue;
+                    color:white;
+                    border-bottom-left-radius: 0;
+    
+                }
+            }
+            .chat-footer {
+                width:100%;
+                margin-bottom:2vh;
+                @extend %fb-sb;
+                .buttons-wrapper {
+                    @extend %fb-fs;
+                    .btn {
+                        cursor: pointer;
+                        width: 8vh;
+                        height:8vh;
+                        @extend %fb-c;
+                        box-shadow: 4px 4px 6px rgba(0 ,0, 0, 0.16);
+                        border-radius: 50%;
+                        &:hover {
+                            background: $light-green;
+                        }
+                        img {
+                            width:50%;
+                            height: 50%;
+                        }
+                        &:last-child {
+                            margin-left:20px;
+                            &:hover {
+                                background: $light-blue;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+            .form {
+                @extend %fb-fs;
+                overflow: hidden;
+                width:60%;
+                height:8vh;
+                border-radius: 10px;
+                @extend %shdw-blur-m;
+                input {
+                    font-size: 1vw;
+                    height: 100%;
+                    width:calc(100% - 80px);
+                    border:none;
+                    border:1px solid $light-blue;
+                    border-radius:10px 0 0 10px;
+                    border-right:none;
+                }
+                div {
+                    cursor: pointer;
+                    height: 100%;
+                    width:80px;
+                    background:$blue;
+                    @extend %fb-c;
+                    border-radius:0 10px 10px 0;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
         }
     }
     
