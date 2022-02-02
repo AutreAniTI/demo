@@ -1,8 +1,17 @@
 //fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 $roboto : 'Roboto', sans-serif;
 $raleway: 'Raleway', sans-serif;
+
+//breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop-s: 1280px;
+$breakpoint-desktop-m: 1440px;
+$breakpoint-desktop-l: 1920px;
+
+
 
 //colors
 
@@ -19,9 +28,14 @@ $purple-bright:#7A2180;
 $purple-brighter:#E40276 ;
 //shades of blue
 $blue07: rgba(0, 151, 186, .7);
+$light-blue:#F5F8FA;
+$lighter-blue:#EDF2FB;
+$dark-blue: #143250;
 
 //shades of green
 $green07: rgba(11, 130, 31, .7);
+$light-green :#E7F3E9;
+
 
 //shades of yellow
 $yellow07:rgba(212, 146, 6, .7);
@@ -31,7 +45,7 @@ $red07:rgba(190, 11, 0, .7);
 
 //font color
 $font-primary: #2c2c2c;
-$font-gray-light: #777;
+$font-gray-light: #9a9a9a;
 
 //shades of gray
 
@@ -40,6 +54,15 @@ $lighter-gray : #C6C8DB;
 $medium-gray:#555;
 
 
-//
+// linear backgrounds
 $green-blue:linear-gradient(45deg, $blue , $green );
 $blue-green:linear-gradient(90deg, $blue , $green );
+$blue-pink:linear-gradient(106.56deg,
+ rgba(126, 232, 250, 0.46) 2.15%,
+  rgba(238, 192, 198, 0.649933) 100.72%, 
+  rgba(255, 209, 102, 0.66) 105.94%,
+   rgba(39, 24, 126, 0.63) 105.95%,
+    rgba(39, 24, 126, 0.63) 105.96%);
+
+$blue-pink-yellow: linear-gradient(106.81deg, rgba(126, 232, 250, 0.46) 7.13%, rgba(203, 204, 214, 0.591282) 34.82%, rgba(238, 192, 198, 0.649933) 47.18%, #FFD166 106%, rgba(255, 209, 102, 0.66) 106.02%, rgba(39, 24, 126, 0.63) 106.03%);
+

@@ -2,7 +2,8 @@
 
 .button-main {
     width: 220px;
-    height:60px;
+    padding: 1.5vh 0;
+    max-height: 60px;
     border-radius: 30px;
     display: inline-flex;
     align-items: center;
@@ -17,8 +18,7 @@
         background: $blue-green;
 
     }
-    @media screen and (max-height: 900px){
-        height:40px;
+    @media screen and (max-width: $breakpoint-desktop-s){
         width:140px;
         font-size: 16px;
         img {

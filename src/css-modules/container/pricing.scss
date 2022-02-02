@@ -1,0 +1,102 @@
+.pricing {
+    background: $blue-pink;
+    @extend %fb-c;
+    padding:3vh 0;
+    min-height:100vh;
+    width:100vw;
+     h3{
+         text-align: center;
+         color:$font-primary;
+         font-size:4vw;
+         font-family: $raleway;
+         margin:0;
+
+     }
+     &-cards-container {
+        @extend %fb-se;
+        flex-wrap: wrap;
+     }
+     &-card {
+        margin-top:10vh;
+        width:23.5%;
+        padding:30px;
+        min-width: 200px;
+        background-color: #fff;
+        border-radius:20px;
+        transition: all 0.3s;
+        @extend %shdw-dp-l ;
+        @extend %fb-col ;
+        p{
+            text-align: center;
+        }
+        .price {
+            p:first-child {
+                font-size: 1.9vw;
+                font-weight: 600;
+                margin:0;
+            }
+            p:last-child {
+                color:$light-gray;
+                font-size: 1vw;
+                margin-top:0;
+            }
+        }
+        .title {
+            font-family: $raleway;
+            color:$green;
+            font-weight: 700;
+            font-size: 2.3vw;
+            margin:0;
+        }
+        .details {
+            @extend %fb-c;
+            min-height:160px;
+            p {
+                font-size: 1vw;
+                color:$font-primary;
+                margin:0;
+            }
+        }
+        .product {
+            @extend %fb-c;
+            min-height:60px;
+            width:100%;
+            border-top:1px solid $lighter-blue;
+            p {
+                font-size: .8vw;
+                color:$font-gray-light;
+                margin:0;
+            }
+        }
+        button {
+            width:90%;
+            margin-top:1vh;
+            background: $light-green ;
+            color:$green;
+            font-size: .9vw;
+            font-weight: bold;
+            border:1px solid $light-green ;
+            transition:all 0.3s;
+            &:hover {
+                border: 1px solid $green;
+                background: $light-green ;
+                color:$green;
+            }
+        }
+        &:hover {
+            margin-top:5vh;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+            button {
+                background: $green ;
+                color:#fff;
+            }
+        }        
+
+     }
+}
+
+
+
+
+
+
