@@ -1,0 +1,110 @@
+.charts {
+    width:100vw;
+    min-height: 100vh;
+    padding: 10vh 0;
+    background-color: $bg-gray;
+    display: flex;
+    align-items: stretch;
+    .container {
+        @extend %fb-sb;
+        align-items: flex-start;
+    }
+    &-left,
+    &-right {
+        @extend %fb-col;
+        height:100%;
+        justify-content: space-between;
+    }
+    .charts-box {
+        @extend %shdw-blur-l;
+        background-color: #fff;
+        width:100%;
+        padding:3vh 2vw;
+        border-radius: 10px;
+        margin-top:2vh;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &-left {
+        width:33vw;
+    
+        .chart-donut {
+            @extend %fb-col;
+            align-items: flex-start;
+            .donuts-wrapper {
+                position: relative;
+                width:25vw;
+                height:25vw;
+                margin:0 auto;
+                .donut {
+                    position: absolute;
+                    @extend %shdw-blur-l;
+                    margin:0;
+                    background:transparent;
+                }
+                .donut-outer {
+                    width:100%;
+                    height:100%;
+                }
+                .donut-inner {
+                    width:70%;
+                    height:70%;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            
+            .donut-details {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                max-width: 25vw;
+                margin:2vh auto 0;
+                justify-content: space-evenly;
+                div {
+                    margin:2%;
+                    color:$font-gray-light;
+                    &:last-child {
+                        margin-right:0;
+                    }
+                    span {
+                        margin-right:10px;
+                    }
+                }
+                span {
+                    display: inline-block;
+                    width:1vw;
+                    height: 1vw;
+                }
+                .percentage {
+                    width:fit-content;
+                    color:$font-primary;
+                    margin-right:3px;
+                    font-size: 90%;
+                }
+            }
+        }
+    }
+    &-right {
+        width:43vw;
+        display: flex;
+        align-items: stretch;
+        .tagline {
+            font-family: $raleway;
+            font-size: 3vw;
+            font-weight: 700;
+            color:$font-primary;
+            margin:0;
+            padding:2vh 0;
+            border-bottom: 1px solid $lighter-blue;
+        }
+        .dropdown {
+            margin:5vh 0;
+        }
+    }
+}
+
+
+

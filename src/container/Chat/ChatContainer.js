@@ -46,17 +46,17 @@ const ChatContainer = () => {
                                 <p>It depends what you need, and how fast you need</p>
                             </div>
                         </div>
-                        <div className = "chat-footer">
+                        <div className="chat-footer">
                             <div
                                 className="buttons-wrapper">
-                                    <div
-                                        className = "btn">
-                                            <Call/>
-                                        </div>
-                                        <div
-                                        className = "btn">
-                                            <Chat/>
-                                        </div>
+                                <div
+                                    className="btn">
+                                    <Call />
+                                </div>
+                                <div
+                                    className="btn">
+                                    <Chat />
+                                </div>
                             </div>
                             <div
                                 className="form">

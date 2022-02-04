@@ -6,7 +6,7 @@
     .title,
     .options {
         box-sizing: border-box;
-        margin-top:20px;
+        margin-top:2vh;
         animation: fade-in 0.3s ease-in-out forwards;
         width:300px;
         background:white;
@@ -15,8 +15,10 @@
         overflow:hidden;
         p {
             margin:0;
-            font-size:24px;
-           
+            font-size:1.3vw;
+        }
+        svg {
+            width:1vw;
         }
     }
     .options {
@@ -25,8 +27,8 @@
     }
    
     &-item{
-        height:70px;
-        padding:0 20px;
+        height:8vh;
+        padding:0 2vw;
         @extend %fb-fs;
         cursor: pointer;
         p {
