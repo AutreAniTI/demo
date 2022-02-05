@@ -5,11 +5,10 @@ import MenuItems from "./MenuItems";
 
 const CircularMenuContainer = () => {
     const [active, setActive] = useState();
-    const [borderWidth, setBorderWidth] = useState(12)
+    const [borderWidth, setBorderWidth] = useState(10)
     useEffect(() => {
         let timerId
-        if(active) {
-            
+        if(active) {         
             let i = borderWidth;
             timerId = setInterval(() => i > 0 && setBorderWidth(i-=2), 100);
         }
@@ -17,23 +16,7 @@ const CircularMenuContainer = () => {
     },[active])
     console.log(borderWidth)
     return (
-
-
-        // <div
-        //     className={`circular-menu ${active ? "active" : ""}`}>
-
-        //     <a className="floating-btn" onClick={() => setActive(!active)}>
-        //         <i className="fa fa-bars"></i>
-        //     </a>
-
-        //     <menu className="items-wrapper">
-        //         <a href="#" className="menu-item fa fa-home"></a>
-        //         <a href="#" className="menu-item fa fa-user"></a>
-        //         <a href="#" className="menu-item fa fa-pie-chart"></a>
-        //         <a href="#" className="menu-item fa fa-cog"></a>
-        //     </menu>
         <div
-
         style = {{width: borderWidth * 5 +"vw", height:borderWidth * 5 +"vw"}}
          className="circular-menu">
             <div

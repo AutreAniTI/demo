@@ -12,6 +12,8 @@
     width:100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
+
     &:after {
         background: radial-gradient(100% 19930.8% at -1.67% 14.74%, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0.21) 100%);
         backdrop-filter: blur(10px);
