@@ -1,0 +1,54 @@
+.charts {
+    .container {
+        flex-wrap: wrap;
+    }
+    .top-bar {
+        width:100%;
+        @extend %fb-fe;
+        .bar {
+            width:20%;
+            margin-right:5%;
+        }
+        .title-wrapper{
+            @extend %fb-sb;
+            padding:0 10%;
+            font-size: 1vw;
+            color:$font-gray-light;
+            margin-bottom: 5%;
+        }
+        .bar-wrapper {
+            box-shadow: 3px 3px 6px rgba(0, 0 ,0, 0.15),
+                        inset 3px 3px 6px rgba(0, 0 ,0, 0.15);
+            height:4vh; 
+            @extend %fb-c;
+            border-radius: 20px;
+            div {
+                width:calc(100% - 1vh);
+                height: 3vh;
+                border-radius: 20px;
+            }
+        }
+    }
+    .chart-content {
+        @extend %fb-sb;
+        width:100%;
+        margin-top: 3vh;
+        align-items: stretch;
+        .charts-left {
+            height: 100%;
+            width:23vw;
+            color:$font-medium-dark;
+            font-size: 1.2vw;
+            font-family: $roboto;
+            .rating-slider {
+                margin-top:3vh;
+            }
+        }
+    }
+    .radar-chart-box {
+        width:55vw;
+        height:55vw;
+        margin-top: 0;
+
+    }
+}

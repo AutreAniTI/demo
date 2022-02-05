@@ -5,3 +5,5 @@ export const PERFORMANCE = '/performance';
 export const PRICING = '/pricing';
 export const CHAT ='/chat';
 export const CHARTS = '/charts';
+export const MENU = '/menu';
+export const RADAR_CHART = '/radar-chart';
