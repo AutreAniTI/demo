@@ -2,13 +2,12 @@
 .circular-menu {
     transition: all 0.2s linear;
     margin:0 auto;
-    width: 50vw;
-    height:50vw;
     max-width: 800px;
     max-height: 800px;
     background-image: url('data:image/svg+xml,%3csvg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"%3e%3crect width="100%25" height="100%25" fill="none" rx="400" ry="400" stroke="white" stroke-width="3" stroke-dasharray="10%2c10" stroke-dashoffset="160" stroke-linecap="butt"/%3e%3c/svg%3e');
     border-radius: 50%;
     @extend %fb-c;
+    overflow:hidden;
     &-wrapper {
         width:80%;
         height: 80%;

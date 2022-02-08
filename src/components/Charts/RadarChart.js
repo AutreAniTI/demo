@@ -42,6 +42,9 @@ const RadarChart = ({size}) => {
             type: "radar",
             data: data,
             options: {
+                legend: {
+                    display: false
+                },
                 elements: {
                     line: {
                         borderColor: "red",
