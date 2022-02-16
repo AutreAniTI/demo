@@ -1,5 +1,4 @@
 import CircularMenuContainer from "../components/CircularMenu/CircularMenu";
-import Video from '../assets/videos/island.mp4';
 
 const Menu = () => {
     return ( 
@@ -8,7 +7,7 @@ const Menu = () => {
             <video
             className = "island-video"
              autoPlay muted loop>
-                <source src= {Video} type="video/mp4"/>
+                <source src= "https://www.youtube.com/watch?v=qRyIH4L7A8M" type="video/mp4"/>
             </video>
             <CircularMenuContainer/>
         </div>

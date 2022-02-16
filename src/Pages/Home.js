@@ -1,5 +1,4 @@
 import Navigation from '../container/Navigation/Navigation';
-import Video from '../assets/videos/island.mp4';
 
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
             <video
             className = "island-video"
              autoPlay muted loop>
-                <source src= {Video} type="video/mp4"/>
+                <source src="https://www.youtube.com/watch?v=qRyIH4L7A8M" type="video/mp4"/>
             </video>
             <Navigation />
         </div>
