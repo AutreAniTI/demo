@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Router
-        basename={process.env.PUBLIC_URL}>
+        basename={process.env.PUBLIC_URL +"demo/"}>
         <Switch>
           <Route path={INTERACTIONS} component={Interactions} />
           <Route path={PERFORMANCE} component={Performance} />

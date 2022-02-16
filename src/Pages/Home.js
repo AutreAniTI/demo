@@ -8,7 +8,7 @@ const Home = () => {
             <video
             className = "island-video"
              autoPlay muted loop>
-                <source src="https://www.youtube.com/watch?v=qRyIH4L7A8M" type="video/mp4"/>
+                <source src="https://res.cloudinary.com/dgntbs1qb/video/upload/v1645005178/TI/island.f70526ef_hpxv0y.mp4" type="video/mp4"/>
             </video>
             <Navigation />
         </div>
