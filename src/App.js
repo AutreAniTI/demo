@@ -6,6 +6,7 @@ import Chat from "./Pages/Chat";
 import Charts from "./Pages/Charts";
 import Menu from "./Pages/CircularMenu";
 import ChartRadar from "./Pages/ChartRadar";
+import ClientEval from "./Pages/ClientEval";
 import {
   BrowserRouter as Router,
   Route,
@@ -22,6 +23,7 @@ import {
   MENU,
   RADAR_CHART,
   LINKEDIN_SSI,
+  CLIENT_EVAL
 } from './constants/routes';
 import SSILinkedIn from "./Pages/SSILinkedIn";
 
@@ -29,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <Router
-        basename={process.env.PUBLIC_URL +"demo/"}>
+        basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path={INTERACTIONS} component={Interactions} />
           <Route path={PERFORMANCE} component={Performance} />
@@ -39,6 +41,7 @@ function App() {
           <Route path={MENU} component={Menu} />
           <Route path={RADAR_CHART} component = {ChartRadar}/>
           <Route path = {LINKEDIN_SSI} component ={SSILinkedIn}/>
+          <Route path = {CLIENT_EVAL} component = {ClientEval} />
           <Route path={DEFAULT} exact component={Home} />
           <Route path={HOME} exact component={Home} />
         </Switch>

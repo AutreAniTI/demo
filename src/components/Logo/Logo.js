@@ -5,7 +5,7 @@ const Logo = ({
 }) => {
     return (
         <div
-            style = {{backgroundImage: `url(${LogoImg})`}}
+            style = {{backgroundImage: `url(${LogoImg})`, backgroundRepeat: "no-repeat"}}
             className={`logo ${className}`}>
         </div>
     );

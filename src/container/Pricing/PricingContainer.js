@@ -17,7 +17,7 @@ const PricingContainer = () => {
         <div
             className="pricing">
             <div className="container">
-                <h3>It would be nice to have a heading</h3>
+                <h3>Total Interaction Pricing</h3>
                 <div
                     className="pricing-cards-container">
                     {list}

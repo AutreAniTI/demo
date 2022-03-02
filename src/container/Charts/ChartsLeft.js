@@ -1,4 +1,5 @@
 import Donut from "../../components/Donut/Donut";
+import Button from '../../components/Button/Button';
 
 const ChartsLeft = ({ DATA_INNER, DATA_OUTER}) => {
 
@@ -21,14 +22,14 @@ const ChartsLeft = ({ DATA_INNER, DATA_OUTER}) => {
                     <div
                         className="donut donut-outer">
                         <Donut
-                            borderWidth="6"
+                            borderWidth="6vw"
                             arr={DATA_OUTER}
                         />
                     </div>
                     <div
                         className="donut donut-inner">
                         <Donut
-                            borderWidth="4"
+                            borderWidth="4vw"
                             arr={DATA_INNER}
                         />
                     </div>
@@ -42,10 +43,12 @@ const ChartsLeft = ({ DATA_INNER, DATA_OUTER}) => {
                 className="charts-box text-wrapper">
                 <p>Text</p>
             </div>
-            <div
+            <Button
+                label = "Calculate"/>
+            {/* <div
                 className="charts-box calculations">
-                <p>calculations</p>
-            </div>
+                <span>calculations</p>
+            </div> */}
         </div>
     );
 }

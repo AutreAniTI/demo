@@ -23,7 +23,7 @@ export const DonutSlices = styled.div`
     clip-path: inset(0 calc(50% * (var(--checkStart) / var(--checkStart))) 0 0);
     &:after {
         box-sizing: border-box;
-        border: ${props => props.width + "vw"} solid rgba(0, 0, 0, 0);
+        border: ${props => props.width} solid rgba(0, 0, 0, 0);
         border-radius: 50%;
         content: "";
         height: 100%;

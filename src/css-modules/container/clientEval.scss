@@ -1,0 +1,76 @@
+.client-eval {
+    h1 {
+        color:black;
+        margin:0 auto 2vh;
+        text-align: center;
+        font-size:6vw;
+        letter-spacing: .2vw;
+        font-weight: 500;
+    }
+    .welcome-logo {
+        display:block;
+        height: 50vmin;
+        background-size:contain;
+        margin:0 auto;
+    }
+    .centered{
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .message-box {
+        opacity: 0;
+        margin: 0 auto;
+        margin-bottom:5%;
+        animation: fade-in .3s linear forwards;
+    }
+    .yes-no-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:70%;
+        margin:0 auto;
+        transition: all 0.2s;
+        .yes,
+        .no {
+            cursor: pointer;
+            display: inline-block;
+            width:30%;
+            transition:all .2s;
+            animation:1s linear forwards;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .ask-for-name {
+        .message-box:not(.answer) {
+            margin-left:0;
+        }
+        form,
+        .answer {
+            align-self:flex-end;
+        }
+        .answer {
+            background: $blue;
+            color:#fff;
+            margin-right:0;
+        }
+    }
+    .wait {
+        .message-box:not(.answer) {
+            margin-left:0;
+        }
+        .delayed-1 {
+            animation-delay: 1s;
+        }
+        .delayed-2 {
+            animation-delay: 4s;
+        }
+        .delayed-3 {
+            animation-delay: 5s;
+        }
+    }
+}

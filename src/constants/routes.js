@@ -8,3 +8,4 @@ export const CHARTS = '/charts';
 export const MENU = '/menu';
 export const RADAR_CHART = '/radar-chart';
 export const LINKEDIN_SSI = '/linkedin-ssi';
+export const CLIENT_EVAL = '/client-evaluation';

@@ -17,3 +17,6 @@ body {
     width: 100%;
     font-family: $roboto;
 }
+.iframe {
+    pointer-events: none;
+}

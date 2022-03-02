@@ -1,0 +1,22 @@
+.single-input-form  {
+    display: flex;
+    border:1px solid $lighter-gray;
+    padding:20px;
+    background-color: #FFF; 
+    border-radius: 10px;
+    animation:0.2s linear;
+    input {
+        border:none;
+        outline: none;
+    }
+    .send-button {
+        height: 30px;
+        width:30px;
+        background-size: cover;
+        margin-left:20px;
+    }
+}
+.single-input-form-focused {
+    border-color:$blue;
+    box-shadow: 0 0 3px $blue;
+}

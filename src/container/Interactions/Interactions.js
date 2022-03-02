@@ -18,8 +18,7 @@ const InteractionsContainer = () => {
             <div className = " int-container container">
               <Slider
               controller = {CONTROLLER_DATA}
-              components = {components}/>
-             
+              components = {components}/>   
             </div> 
             
         </div>

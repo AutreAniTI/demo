@@ -86,6 +86,14 @@
                 }
             }
         }
+        button {
+            width:100%;
+            background: rgb(17,138,178);
+            &:hover {
+                background: rgb(17,138,178);
+                opacity: 0.9;
+            }
+        }
     }
     &-right {
         width:43vw;

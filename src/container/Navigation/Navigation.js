@@ -4,7 +4,7 @@ import DashedPolygon from "../../components/DashedComponents/DashedPolygon";
 import DashedLine from "../../components/DashedComponents/DashedLine";
 import { useState } from "react";
 import { useHistory } from "react-router";
-import { INTERACTIONS } from "../../constants/routes";
+import { CLIENT_EVAL, INTERACTIONS } from "../../constants/routes";
 import { useEffect } from "react";
 
 const Navigation = () => {
@@ -14,15 +14,19 @@ const Navigation = () => {
 
     useEffect(() => {
         if(activeNav) {
-            setActiveNav(null)
-            history.push(INTERACTIONS);
-
+            if(activeNav === "people") {
+                setActiveNav(null);
+                history.push(CLIENT_EVAL)
+            }else {
+                setActiveNav(null);
+                history.push(INTERACTIONS);
+            }
         }
     },[activeNav])
 
     const handleAnimationEnd = (e) => {
         if(e.animationName === "fade-in") return;
-        const activeNav = e.animationName.split("zoom-");
+        const activeNav = e.animationName.split("zoom-")[1];
         setActiveNav(activeNav)
     }
 
