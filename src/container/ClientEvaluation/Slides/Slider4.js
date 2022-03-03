@@ -30,8 +30,10 @@ const Slider4 = ({ mainState, updateMainState, handleNextClick }) => {
         <div
             className="centered ask-for-name">
             <MessageBox
+                className = "delayed-1"
                 text={`Unfortunately I'm not finding your <strong>interaction forecasting & ${mainState.companyName} needs assessment.</strong>`} />
             <MessageBox
+                className = "delayed-2"
                 text="What email did we send your <strong>PERFORMANCE GUARANTEE</strong> to?" />
             {
                 disappear ?
@@ -41,6 +43,7 @@ const Slider4 = ({ mainState, updateMainState, handleNextClick }) => {
                         className="answer" />
                     :
                     <SingleInputForm
+                        className = "delayed-3"
                         style={{ animationName: state ? "fade-out" : "" }}
                         updateValue={(value) => setState(value)}
                         placeholder="Enter company name" />

@@ -18,12 +18,17 @@ const SingleInputForm = ({
         }
         updateValue(value)
     }
+
+    const handleFocus = () => {
+        setError(null);
+        setFocused(true);
+    }
     return (
         <form 
         className={`single-input-form ${className} ${focused? "single-input-form-focused": ""}`}
         onSubmit={handleSubmit}>
             <input
-                onFocus = {() => { if(error) setError(null); setFocused(true)}}
+                onFocus = {handleFocus}
                 onBlur = {() => setFocused(false)}
                 type="text"
                 value={value}

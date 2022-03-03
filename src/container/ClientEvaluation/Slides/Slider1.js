@@ -3,7 +3,7 @@ import Logo from "../../../assets/images/companyRelated/ti_logo_animation.gif";
 
 const Slider1 = ({ handleNextClick }) => {
     useEffect(() => {
-        setTimeout(handleNextClick, 4000);
+        setTimeout(handleNextClick, 5000);
     }, [])
     
     return (

@@ -2,7 +2,11 @@ import MessageBox from "../../../components/MessageBox/MessageBox";
 import { useState, useEffect } from "react";
 import SingleInputForm from "../../../components/Forms/SingleInputForm";
 
-const Slider3 = ({handleNextClick, updateMainState, mainState}) => {
+const Slider3 = ({
+    handleNextClick, 
+    updateMainState, 
+    mainState
+}) => {
     const [state, setState] = useState();
     const [disappear, setDisappear] = useState();
 
@@ -30,9 +34,6 @@ const Slider3 = ({handleNextClick, updateMainState, mainState}) => {
         <div
             className="centered ask-for-name">
             <MessageBox
-                title={true}
-                text="Great" />
-            <MessageBox
                 text="What is the name of the company you asked us to test?                " />
             {
                 disappear ?
@@ -42,11 +43,11 @@ const Slider3 = ({handleNextClick, updateMainState, mainState}) => {
                         className="answer" />
                     :
                     <SingleInputForm
+                        className = "delayed-2"
                         style={{ animationName: state ? "fade-out" : "" }}
                         updateValue={(value) => setState(value)}
                         placeholder="Enter company name" />
             }
-
         </div>
     );
 }

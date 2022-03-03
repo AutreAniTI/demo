@@ -1,4 +1,9 @@
 .client-eval {
+    background: $blue-pink;
+    height: 100vh;
+    .container {
+        height:calc(100% - 120px);
+    }
     h1 {
         color:black;
         margin:0 auto 2vh;
@@ -9,68 +14,115 @@
     }
     .welcome-logo {
         display:block;
-        height: 50vmin;
         background-size:contain;
         margin:0 auto;
+        max-width: 100%;
+        aspect-ratio: 58/34;
     }
     .centered{
         height: 100%;
         flex-direction: column;
         display: flex;
-        align-items: center;
         justify-content: center;
     }
     .message-box {
         opacity: 0;
-        margin: 0 auto;
         margin-bottom:5%;
         animation: fade-in .3s linear forwards;
     }
-    .yes-no-wrapper {
+    .images-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         width:70%;
         margin:0 auto;
         transition: all 0.2s;
-        .yes,
-        .no {
-            cursor: pointer;
-            display: inline-block;
-            width:30%;
+        .image-container {
+            width:20%;
+            aspect-ratio: 1/1;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             transition:all .2s;
-            animation:1s linear forwards;
+            animation:.3s linear forwards;
+            cursor: pointer;
+            img {
+                width:50%;
+                aspect-ratio: 1/1;         
+            }
+            span {
+                display: none;
+                position: absolute;
+                text-align: center;
+                width:fit-content;
+                top:-10px;
+                left:50%;
+                transform: translate(-50%, -100%);
+                background: #FFF;
+                color: $font-primary;
+            }
             &:hover {
                 transform: scale(1.1);
+                border:1px solid $lighter-gray ;
+                span {
+                    display: block;
+                    padding:10px 20px;
+                    border-radius: 10px;
+                    border:1px solid $lighter-gray;
+                }
             }
+        } 
+        .yes,
+        .no {
+            width:30%;
         }
+    }
+    form,
+    .answer {
+            align-self:flex-end;
+            margin-right:5px;
+    }
+    form {
+        animation: fade-in .3s linear forwards;
+        padding: 2vh 3vw;
+        border:none;
+        opacity: 0;
+        input {
+            font-size:20px;
+            line-height: 50px;
+            color:$font-primary;
+        }
+    }
+    .answer {
+        background: $blue;
+        color:#fff;
     }
     .ask-for-name {
         .message-box:not(.answer) {
             margin-left:0;
-        }
-        form,
-        .answer {
-            align-self:flex-end;
-        }
-        .answer {
-            background: $blue;
-            color:#fff;
-            margin-right:0;
-        }
+        }    
+    }
+    .delayed-1 {
+        animation-delay: 1s;
+    }
+    .delayed-2 {
+        animation-delay: 2s;
+    }
+    .delayed-3 {
+        animation-delay: 3s;
+    }
+    .delayed-4 {
+        animation-delay: 4s;
+    }
+    .delayed-5 {
+        animation-delay: 5s;
     }
     .wait {
         .message-box:not(.answer) {
             margin-left:0;
         }
-        .delayed-1 {
-            animation-delay: 1s;
-        }
-        .delayed-2 {
-            animation-delay: 4s;
-        }
-        .delayed-3 {
-            animation-delay: 5s;
-        }
+       
     }
 }

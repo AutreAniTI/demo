@@ -1,6 +1,6 @@
 import MessageBox from "../../../components/MessageBox/MessageBox";
 
-const Slider5 = ({
+const Slider6 = ({
     mainState,
     updateMainState,
     handleNextClick
@@ -15,7 +15,7 @@ const Slider5 = ({
 
     const handleAnimationEnd = (e, bool) => {
         if (bool) {
-            setTimeout(handleSlide, 2000)
+            setTimeout(handleSlide, 6000)
         }
     }
 
@@ -23,19 +23,13 @@ const Slider5 = ({
         <div
             className="centered wait">
             <MessageBox
-                text="Thanks" />
+                text="Give me a few minutes and I'll connect you to Ti Services..." />
             <MessageBox
-                className="delayed-1"
-                text={`I'll check to see why our records aren't listing <strong>${mainState.companyEmail}</strong> after we're finished...`} />
-            <MessageBox
-                className="delayed-4"
-                text="Wait ..." />
-            <MessageBox
-                handleAnimationEnd={(e) => handleAnimationEnd(e, true)}
+                handleAnimationEnd = {(e) => handleAnimationEnd(e, true)}
                 className="delayed-5"
-                text="I'm still looking ..." />
+                text={`Unfortunately I'm only able to find the  <strong>${mainState.companyName} </strong> information we've scraped, not your  <strong>${mainState.companyEmail} METRICS FORECASTING</strong>`} />
         </div>
     );
 }
 
-export default Slider5;
+export default Slider6;
