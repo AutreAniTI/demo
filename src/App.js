@@ -23,9 +23,11 @@ import {
   MENU,
   RADAR_CHART,
   LINKEDIN_SSI,
-  CLIENT_EVAL
+  CLIENT_EVAL,
+  PERSONALITY
 } from './constants/routes';
 import SSILinkedIn from "./Pages/SSILinkedIn";
+import Personality from "./Pages/Personality";
 
 function App() {
   return (
@@ -42,6 +44,7 @@ function App() {
           <Route path={RADAR_CHART} component = {ChartRadar}/>
           <Route path = {LINKEDIN_SSI} component ={SSILinkedIn}/>
           <Route path = {CLIENT_EVAL} component = {ClientEval} />
+          <Route path={PERSONALITY} component={Personality} />
           <Route path={DEFAULT} exact component={Home} />
           <Route path={HOME} exact component={Home} />
         </Switch>
