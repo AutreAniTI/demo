@@ -10,3 +10,5 @@ export const RADAR_CHART = '/radar-chart';
 export const LINKEDIN_SSI = '/linkedin-ssi';
 export const CLIENT_EVAL = '/client-evaluation';
 export const PERSONALITY = '/personality';
+export const LEAD_MAGENT = '/lead-magnet';
+export const LEAD_MAGNET_OPTIONS = "/lead-magnet-options";

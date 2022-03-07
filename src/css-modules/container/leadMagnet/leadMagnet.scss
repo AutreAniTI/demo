@@ -1,0 +1,59 @@
+.lead-magnet-options {
+    width:100vw;
+    height: 100vh;
+    position: relative;
+   
+    .nav-circle {
+        &-aquisition {
+            left: 30%;
+            .nav-circle{
+                background: $yellow07;
+            }
+        }
+    
+        &-service {
+            bottom:15%;
+            .nav-circle{
+                background: $red07;
+            }
+        }
+        &-support {
+            right:0;
+            bottom: 15%;
+            .nav-circle{
+                background: $blue;
+            }
+        } 
+        &-total-interactions {
+            border:none;
+            background-image: url('data:image/svg+xml,%3csvg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"%3e%3crect width="100%25" height="100%25" fill="none" rx="160" ry="160" stroke="DeepSkyBlue" stroke-width="3" stroke-dasharray="10%2c10" stroke-dashoffset="160" stroke-linecap="butt"/%3e%3c/svg%3e');
+            
+            left: 30%;
+            top:30%;
+            .nav-circle{
+                background: #fff;
+                span {
+                    color:black;
+                }
+            }
+        }
+        &-small {
+            .nav-circle {
+                background:black;
+            }
+        }
+        &-communication {
+            right:0%;
+            top:18%;
+        }
+        &-education {
+            top:18%;
+            left:0;
+        }
+        &-automation {
+            top: 100%;
+            left:40%;
+            transform: translateY(-100%);
+        }
+    }
+}
