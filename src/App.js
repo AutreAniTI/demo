@@ -11,6 +11,7 @@ import SSILinkedIn from "./Pages/SSILinkedIn";
 import Personality from "./Pages/Personality";
 import LeadMagnetInt from "./Pages/LeadMagnetInt";
 import Navigation from "./container/LeadMagnet/Navigation/Navigation";
+import Calendly from "./Pages/Calendly";
 import {
   BrowserRouter as Router,
   Route,
@@ -30,7 +31,8 @@ import {
   CLIENT_EVAL,
   PERSONALITY,
   LEAD_MAGENT,
-  LEAD_MAGNET_OPTIONS
+  LEAD_MAGNET_OPTIONS,
+  CALENDLY
 } from './constants/routes';
 
 
@@ -52,6 +54,7 @@ function App() {
           <Route path={PERSONALITY} component={Personality} />
           <Route path={LEAD_MAGENT} component={LeadMagnetInt} />
           <Route path={LEAD_MAGNET_OPTIONS} component={Navigation} />
+          <Route path={CALENDLY} component={Calendly} />
           <Route path={DEFAULT} exact component={Home} />
           <Route path={HOME} exact component={Home} />
         </Switch>

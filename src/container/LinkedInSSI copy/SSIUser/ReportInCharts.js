@@ -4,51 +4,6 @@ import LinkedInQuestion from "../../../assets/icons/Icons/LinkedInQuestion";
 import Modal from "../Modal";
 import { SSI_DATA } from "./SSIdata";
 import { useEffect, useState } from "react";
-import Donut from "../../../components/Donut/Donut";
-
-export const DATA_INNER = [
-    {
-        name: "Facebook",
-        color: "66,103,178",
-        percentage: .248
-    },
-    {
-        name: "",
-        color: "255,255,255",
-        percentage: .002
-    },
-    {
-        name: "LinkedIn",
-        color: "40,103,178",
-        percentage: .248
-    },
-    {
-        name: "",
-        color: "255,255,255",
-        percentage: .002
-    },
-    {
-        name: "Youtube",
-        color: "205, 32, 31",
-        percentage: .248
-    },
-    {
-        name: "",
-        color: "255,255,255",
-        percentage: .002
-    },
-    {
-        name: "Google",
-        color: "244,180,0",
-        percentage: .248
-    },
-    {
-        name: "",
-        color: "255,255,255",
-        percentage: .002
-    }
-]
-
 const ReportInCharts = () => {
     const [active, setActive] = useState();
 
@@ -84,13 +39,13 @@ const ReportInCharts = () => {
     return (
         <section>
             <div
-                className="report-box main-chart">
+                className="report-box">
                 <div className="left">
                     <div
                         className="title">
                         <p
                             className="report-category">
-                            Current Channel Utilization
+                            Current Social Selling Index
                         </p>
 
                         <div
@@ -111,13 +66,7 @@ const ReportInCharts = () => {
                     </div>
                     <div
                         className="donut-wrapper">
-                        <div
-                            style={{ width: "200px", height: "200px" }}>
-                            <Donut arr={DATA_INNER}
-                                borderWidth="20px"
-                            />
-                        </div>
-                        {/* <Circle /> */}
+                        <Circle />
                         <div
                             className="donut-details">
                             <span>18</span> <br />

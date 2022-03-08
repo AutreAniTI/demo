@@ -7,23 +7,23 @@ const ReportAboutUser = () => {
                     className="report-box">
                     <div
                         className="report-data">
-                        <i>Unknown</i>
-                        <p>?
+                        <i>Top</i>
+                        <p>50
                             <span>%</span></p>
                     </div>
                     <p className="report-category">
-                            Industry Average</p>
+                        Industry SSI rank</p>
                 </div>
                 <div
                     className="report-box">
                     <div
                         className="report-data">
                         <i>Top</i>
-                        <p>62
+                        <p>80
                             <span>%</span></p>
                     </div>
                     <p className="report-category">
-                        Direct Regional Competitor</p>
+                        Network SSI rank</p>
                 </div>
             </div>
         </section>
