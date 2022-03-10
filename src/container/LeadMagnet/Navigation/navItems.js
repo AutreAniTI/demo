@@ -8,21 +8,17 @@
 export const NAV_ITEMS_MAIN = [
     {
         name: "aquisition",
-        // icon:People,
     },
     {
         name: "support",
-        // icon:Technology
 
     },
     {
         name: "service",
-        // icon:Process
 
     },
     {
         name: "total interactions",
-        // icon:Interactions
     }
 ]
 

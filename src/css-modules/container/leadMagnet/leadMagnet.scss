@@ -35,12 +35,16 @@
                 background: #fff;
                 span {
                     color:black;
+
                 }
             }
         }
         &-small {
             .nav-circle {
                 background:black;
+                span {
+                    font-size: 1vw;
+                }
             }
         }
         &-communication {
