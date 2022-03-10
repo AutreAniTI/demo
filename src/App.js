@@ -12,6 +12,7 @@ import Personality from "./Pages/Personality";
 import LeadMagnetInt from "./Pages/LeadMagnetInt";
 import Navigation from "./container/LeadMagnet/Navigation/Navigation";
 import Calendly from "./Pages/Calendly";
+import TelesalesIntegration from "./Pages/TelesalesIntegration";
 import {
   BrowserRouter as Router,
   Route,
@@ -32,7 +33,8 @@ import {
   PERSONALITY,
   LEAD_MAGENT,
   LEAD_MAGNET_OPTIONS,
-  CALENDLY
+  CALENDLY,
+  TELESALES
 } from './constants/routes';
 
 
@@ -55,6 +57,7 @@ function App() {
           <Route path={LEAD_MAGENT} component={LeadMagnetInt} />
           <Route path={LEAD_MAGNET_OPTIONS} component={Navigation} />
           <Route path={CALENDLY} component={Calendly} />
+          <Route path={TELESALES} component={TelesalesIntegration} />
           <Route path={DEFAULT} exact component={Home} />
           <Route path={HOME} exact component={Home} />
         </Switch>

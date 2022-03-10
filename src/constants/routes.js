@@ -13,3 +13,4 @@ export const PERSONALITY = '/personality';
 export const LEAD_MAGENT = '/lead-magnet';
 export const LEAD_MAGNET_OPTIONS = "/lead-magnet-options";
 export const CALENDLY = '/calendly';
+export const TELESALES ='/telesales';

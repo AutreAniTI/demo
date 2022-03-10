@@ -6,25 +6,30 @@ const AccordionItem = ({
     content
 }) => {
     const [open, setIsOpen] = useState();
-
+console.log(summary)
     return (
         <div
             className={`accordion-item ${open? 
             "accordion-item-open": undefined}`}>
+            <div 
+                className="accordion-summary"
+                onClick={() => setIsOpen(!open)}>
             <p
-                onClick={() => setIsOpen(!open)}
-                className="accordion-summary">
-                {summary}
-                <Chevron
+                dangerouslySetInnerHTML ={{__html:summary}}
+              >    
+            </p>
+            <Chevron
                     className={open ?
                         "chevron-open" : undefined}
-                />
-            </p>
+            />
+            </div>
+        
             {
                 open &&
                 <p
+                dangerouslySetInnerHTML ={{__html:content}}
                     className="accordion-content">
-                    {content}
+                
                 </p>
             }
 

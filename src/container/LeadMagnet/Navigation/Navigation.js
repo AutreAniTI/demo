@@ -4,7 +4,7 @@ import DashedPolygon from "../../../components/DashedComponents/DashedPolygon";
 import DashedLine from "../../../components/DashedComponents/DashedLine";
 import { useState } from "react";
 import { useHistory } from "react-router";
-import { CLIENT_EVAL, INTERACTIONS } from "../../../constants/routes";
+import { TELESALES } from "../../../constants/routes";
 import { useEffect } from "react";
 
 const Navigation = () => {
@@ -14,13 +14,7 @@ const Navigation = () => {
 
     useEffect(() => {
         if(activeNav) {
-            if(activeNav === "people") {
-                setActiveNav(null);
-                history.push(CLIENT_EVAL)
-            }else {
-                setActiveNav(null);
-                history.push(INTERACTIONS);
-            }
+                history.push(TELESALES)
         }
     },[activeNav])
 

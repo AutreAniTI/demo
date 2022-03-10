@@ -1,31 +1,35 @@
-import { useState } from "react"
+import { useEffect, useState } from "react";
 
 const RadioInput = ({
-
+    options,
+    checked,
+    updateChecked
 }) => {
-    const [state, setState] = useState(true);
+    const [state, setState] = useState(checked);
+
+    useEffect(() => {
+        if(state) {
+            updateChecked(state)
+        }
+    },[state]);
+
+    let list  = options.map((option, index) => (
+        <div
+        key = {index}
+        className={`radio-btn-wrapper ${state === option ?
+            "radio-btn-wrapper-checked" :
+            undefined}`}>
+        <div
+            className="radio-btn-circle"
+            onClick={() => setState(option)} />
+        <span>{option}</span>
+    </div>
+    ))
 
     return (
 
         <div className="radio-btn">
-            <div
-                className={`radio-btn-wrapper ${state ?
-                    "radio-btn-wrapper-checked" :
-                    undefined}`}>
-                <div
-                    className="radio-btn-circle"
-                    onClick={() => setState(true)} />
-                <span>Yes</span>
-            </div>
-            <div
-                className={`radio-btn-wrapper ${!state ?
-                    "radio-btn-wrapper-checked" :
-                    undefined}`}>
-                <div
-                    className="radio-btn-circle"
-                    onClick={() => setState(false)} />
-                <span>No</span>
-            </div>
+           {list}
         </div>
 
     )
