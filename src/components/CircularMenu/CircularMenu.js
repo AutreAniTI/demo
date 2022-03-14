@@ -22,7 +22,7 @@ const CircularMenuContainer = () => {
             <div
                 className="circular-menu-wrapper">
                 <Donut
-                    borderWidth={borderWidth}
+                    borderWidth={borderWidth +"vw"}
                     arr={MENU_DATA} />
                     {
                         !active &&
