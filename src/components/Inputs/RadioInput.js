@@ -6,7 +6,7 @@ const RadioInput = ({
     updateChecked
 }) => {
     const [state, setState] = useState(checked);
-
+    
     useEffect(() => {
         if(state) {
             updateChecked(state)

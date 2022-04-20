@@ -49,9 +49,6 @@ const Interaction3 = ({ index, setSliderControl, active }) => {
         }
     }, [state])
 
-
-
-
     return (
         <div className="int-item">
             <MessageBox

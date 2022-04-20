@@ -22,14 +22,14 @@ const ChartsLeft = ({ DATA_INNER, DATA_OUTER}) => {
                     <div
                         className="donut donut-outer">
                         <Donut
-                            borderWidth="6vw"
+                            borderWidth="60px"
                             arr={DATA_OUTER}
                         />
                     </div>
                     <div
                         className="donut donut-inner">
                         <Donut
-                            borderWidth="4vw"
+                            borderWidth="40px"
                             arr={DATA_INNER}
                         />
                     </div>
